@@ -3,7 +3,7 @@
 #    Function: Fechamento de gaps de regioes repetitivas
 # Description: Utiliza 5 scripts diferentes. Recebe dados de sequenciamento, arquivo de contigs e genoma referencia  // cut modificado para 3000
 #      Author: Diego Mariano
-#     Version: 3
+#     Version: 4
 
 # WARNING: MODIFICADO PARA SER EXECUTADO NO SIMBA
 
@@ -177,7 +177,7 @@ print "\nStep 4/5: mapping with Mira. \nSuccess."
 # -------------------------------------------------------------------------------------------------------------------------------
 
 # Recebe resultado mira
-result_mira = "tmp_map_assembly/tmp_map_d_results/tmp_map_out_ReferenceStrain.unpadded.fasta"
+result_mira = "tmp_map_assembly/tmp_map_d_results/tmp_map_out_AllStrains.unpadded.fasta"
 
 # remove as sequencias repetidas do resultado do mira
 for i in SeqIO.parse(result_mira,"fasta"):
